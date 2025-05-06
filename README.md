@@ -140,7 +140,7 @@ The dataset (`cybersecurity_attacks.csv`) comprises 25 columns. An examination o
 * The prevalence of categorical columns underscores the descriptive nature of cybersecurity logs, capturing diverse details about security events.
 * Numeric fields are primarily discrete counts or specific identifiers (like port numbers) crucial for network traffic analysis.
 
-## 6. Conclusion: Three Key Learnings
+## 6. Three Key Learnings
 
 1.  **Data Transformation is Crucial:** The effectiveness of the analysis heavily relies on proper data transformation. Converting raw date strings into usable datetime objects and extracting meaningful components (like month names or numbers) is a fundamental step that simplifies subsequent aggregation and visualization.
 2.  **Segmentation Helps Identify Trends:** Grouping or segmenting data by relevant categories (in this case, by month and attack type) is essential for uncovering patterns. This approach clearly revealed the seasonality of different cyber threats, which is vital information for predicting potential future attack waves and allocating preventive resources accordingly.
