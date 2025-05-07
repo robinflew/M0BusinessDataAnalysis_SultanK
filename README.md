@@ -44,9 +44,8 @@ The analysis of the `cybersecurity_attacks.csv` dataset revealed the following d
 ## 3. Data Lifecycle
 
 The data in this project follows a standard lifecycle:
-
-1.  **Data Generation/Collection:** Raw data is generated from cybersecurity logs, alerts, and network monitors, as captured in the provided CSV file.
-2.  **Data Storage:** This data is initially stored in a CSV format, making it accessible for analysis tools like Excel and Python. In larger systems, this might involve databases.
+1.  **Business Problem:** What kind of attacks are most frequent per month?
+2.  **Data Generation/Collection:** Raw data is generated from cybersecurity logs, alerts, and network monitors, as captured in the provided CSV file.
 3.  **Data Processing and Cleaning:**
     * Ensuring the 'Timestamp' column is treated as a uniform datetime format.
     * Extracting the month from the 'Timestamp'.
@@ -55,27 +54,12 @@ The data in this project follows a standard lifecycle:
     * Aggregating attack data to count occurrences by month and attack type.
     * Identifying the most frequent attack type for each month.
     * Creating visual summaries (e.g., pivot tables, bar charts) to illustrate trends.
-5.  **Data Visualization & Reporting:** The final outputs include pivot tables and charts that clearly show the distribution and prevalence of attack types across different months.
-6.  **Data Archiving/Disposal:** Depending on organizational retention policies, the raw and processed data might be archived for future reference or securely disposed of after insights have been extracted and reported.
+5.  **Data Presentation & Reporting:** The final outputs include pivot tables and charts that clearly show the distribution and prevalence of attack types across different months.
+6.  **Data Archiving/Disposal (Situational) :** Depending on organizational retention policies, the raw and processed data might be archived for future reference or securely disposed of after insights have been extracted and reported.
 
-*(A flow diagram illustrating these stages would typically be inserted here.)*
+![Project1-Data Life Cycle](https://github.com/user-attachments/assets/527c8cc4-49c7-4cea-a27b-10d2fe323f43)
 
-```
-[--------------------]      [--------------------]      [-----------------------]
-| Data Generation/   | ---> | Data Storage       | ---> | Data Processing/      |
-| Collection         |      | (CSV, Databases)   |      | Cleaning              |
-| (Logs, Alerts)     |      [--------------------]      | (Format Timestamp,    |
-[--------------------]                                  |  Extract Month)       |
-                                                        [-----------------------]
-        ^                                                        |
-        |                                                        | (Archiving/Disposal)
-        |                                                        V
-[--------------------]      [--------------------]      [-----------------------]
-| Data Visualization | <--- | Data Analysis      | <--- | (Feedback for future  |
-| & Reporting        |      | (Aggregation,      |      |  data generation)     |
-| (Charts, Tables)   |      |  Trend ID)         |      [-----------------------]
-[--------------------]      [--------------------]
-```
+
 
 ## 4. Analysis Methodology
 
@@ -121,7 +105,7 @@ Python, with `pandas` and `matplotlib`/`seaborn` libraries, was used for a progr
 
 ## 5. Data Types
 
-The dataset (`cybersecurity_attacks.csv`) comprises 25 columns and 40,000 records, collection starting from 2020 to 2023. An examination of these columns reveals the following data types:
+The dataset (`cybersecurity_attacks.csv`) comprises of 25 columns and 40,000 records, collection starting from 2020 to 2023. An examination of these columns reveals the following data types:
 
 * **Timestamps & Dates:**
     * `Timestamp`: Initially stored as text in the CSV, this column is converted to a datetime object during analysis in both Excel and Python.
