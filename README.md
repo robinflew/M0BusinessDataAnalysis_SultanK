@@ -8,9 +8,13 @@ This project analyzes cybersecurity attack data to identify patterns and the fre
 * **Predictive Prevention:** Developing proactive measures based on common attack times.
 * **Strategic Planning:** Enhancing security infrastructure and policies.
 
-### Scenario & Problem
+### Scenario
 
 A cybersecurity firm aims to understand the yearly patterns of attack types such as Malware, DDoS, and Intrusion. The primary goal is to determine which attack type is most prevalent each month. This knowledge will enable the firm to optimize resource allocation, plan proactive defense strategies, and improve overall network security monitoring.
+
+### Core Business Problem
+
+Which attack type is most common each month, throughout the year?
 
 ### Key Challenges
 
