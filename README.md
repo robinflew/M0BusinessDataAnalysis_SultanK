@@ -41,8 +41,6 @@ The analysis of the `cybersecurity_attacks.csv` dataset revealed the following d
     * May: 1,212 attacks
     * June: 1,268 attacks
 
-A visualization (e.g., a bar chart) would typically accompany these findings, showing the count of each attack type per month, with the dominant attack highlighted.
-
 ## 3. Data Lifecycle
 
 The data in this project follows a standard lifecycle:
@@ -123,7 +121,7 @@ Python, with `pandas` and `matplotlib`/`seaborn` libraries, was used for a progr
 
 ## 5. Data Types
 
-The dataset (`cybersecurity_attacks.csv`) comprises 25 columns. An examination of these columns reveals the following data types:
+The dataset (`cybersecurity_attacks.csv`) comprises 25 columns and 40,000 records, collection starting from 2020 to 2023. An examination of these columns reveals the following data types:
 
 * **Timestamps & Dates:**
     * `Timestamp`: Initially stored as text in the CSV, this column is converted to a datetime object during analysis in both Excel and Python.
@@ -137,6 +135,7 @@ The dataset (`cybersecurity_attacks.csv`) comprises 25 columns. An examination o
 
 **Additional Notes:**
 
+* Data is sourced from Kaggle and can we found with the following link: https://www.kaggle.com/datasets/teamincribo/cyber-security-attacks/code
 * The prevalence of categorical columns underscores the descriptive nature of cybersecurity logs, capturing diverse details about security events.
 * Numeric fields are primarily discrete counts or specific identifiers (like port numbers) crucial for network traffic analysis.
 
